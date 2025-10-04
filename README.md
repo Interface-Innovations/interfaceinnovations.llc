@@ -2,6 +2,8 @@
 
 A minimal compliance‑ready site for App Store / Play Store submissions.
 
+**Live Site:** [https://interfaceinnovations.llc](https://interfaceinnovations.llc)
+
 ## Local Development
 
 ```bash
@@ -11,19 +13,75 @@ npm run dev
 
 Visit [http://localhost:3000](http://localhost:3000)
 
-## Deploy to Vercel
+## Deployment
 
-1. Push to GitHub
-2. Import the repo at [https://vercel.com/new](https://vercel.com/new)
-3. Framework: **Next.js** (auto-detected)
-4. No extra build settings needed
-5. (Optional) Set `NEXT_TELEMETRY_DISABLED=1` environment variable
+### Current Deployment: Vercel
 
-## Deploy to Netlify
+The site is deployed on Vercel's free tier with automatic HTTPS and global CDN.
 
+**Production URL:** https://interfaceinnovations-6yjtoxo44-avant-vernon-iis-projects.vercel.app
+
+#### Deploy via CLI
+
+```bash
+# Install Vercel CLI globally (one-time setup)
+npm install -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy to production
+vercel --prod
+```
+
+#### Custom Domain Setup
+
+The custom domain `interfaceinnovations.llc` is configured with the following DNS records:
+
+**DNS Provider:** Squarespace
+
+```
+Type: A
+Host: @
+Data: 76.76.21.21
+
+Type: CNAME
+Host: www
+Data: cname.vercel-dns.com
+```
+
+#### Add/Update Domain
+
+```bash
+# Add domain to project
+vercel domains add interfaceinnovations.llc
+
+# Check domain status
+vercel domains ls
+```
+
+### Alternative Deployment Options
+
+<details>
+<summary>Deploy to Netlify</summary>
+
+```bash
+# Install Netlify CLI
+npm install -g netlify-cli
+
+# Login
+netlify login
+
+# Deploy to production
+netlify deploy --prod
+```
+
+**Settings:**
 - Build command: `npm run build`
 - Publish directory: `.next`
 - Framework: Next.js
+
+</details>
 
 ## Customize
 
