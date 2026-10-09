@@ -9,13 +9,13 @@ const serif = Cormorant_Garamond({
   weight: ["500", "600"],
   style: ["normal", "italic"],
   display: "swap",
-  variable: "--font-serif",
+  variable: "--font-cormorant",
 });
 
 const sans = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-sans",
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {

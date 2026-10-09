@@ -15,7 +15,7 @@ export default function PrivacyPage() {
       </div>
 
       {/* Introduction */}
-      <div className="card mb-8 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900">
+      <div className="card mb-8 bg-linear-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900">
         <p className="text-lg leading-relaxed">
           Interface Innovations LLC (&quot;we&quot;, &quot;us&quot;) builds mobile and web apps. This policy describes how we handle information across our products and websites.
         </p>
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
       <div className="space-y-6">
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Database size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <FileEdit size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Share2 size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -89,7 +89,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Clock size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Lock size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -128,7 +128,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Baby size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -142,7 +142,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Globe size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -156,7 +156,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <FileEdit size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -170,7 +170,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow border-2 border-brand-200 dark:border-brand-900 bg-white dark:bg-neutral-950">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Mail size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -185,7 +185,7 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow border-dashed">
           <div className="flex items-start gap-4">
-            <div className="text-neutral-600 dark:text-neutral-400 flex-shrink-0 mt-1">
+            <div className="text-neutral-600 dark:text-neutral-400 shrink-0 mt-1">
               <FileText size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">

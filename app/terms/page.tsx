@@ -12,7 +12,7 @@ export default function TermsPage() {
       </div>
 
       {/* Introduction */}
-      <div className="card mb-8 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900">
+      <div className="card mb-8 bg-linear-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900">
         <p className="text-lg leading-relaxed">
           Welcome to Interface Innovations LLC. By using our apps or website, you agree to these terms.
         </p>
@@ -22,7 +22,7 @@ export default function TermsPage() {
       <div className="space-y-6">
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <ShieldCheck size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -36,7 +36,7 @@ export default function TermsPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <FileCode size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -50,7 +50,7 @@ export default function TermsPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <AlertTriangle size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
@@ -64,7 +64,7 @@ export default function TermsPage() {
 
         <section className="card hover:shadow-lg transition-shadow border-2 border-brand-200 dark:border-brand-900 bg-white dark:bg-neutral-950">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 flex-shrink-0 mt-1">
+            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
               <Mail size={28} strokeWidth={1.5} />
             </div>
             <div className="flex-1">
