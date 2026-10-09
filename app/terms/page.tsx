@@ -5,8 +5,8 @@ export default function TermsPage() {
     <div className="max-w-4xl mx-auto py-12 px-4">
       {/* Header */}
       <div className="mb-12 text-center">
-        <div className="inline-flex items-center justify-center text-brand-600 dark:text-brand-400 mb-6">
-          <FileText size={48} strokeWidth={1.5} />
+        <div className="inline-flex items-center justify-center text-neutral-400 dark:text-neutral-500 mb-6">
+          <FileText size={32} strokeWidth={1.25} aria-hidden="true" />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Terms of Service</h1>
       </div>
@@ -22,8 +22,8 @@ export default function TermsPage() {
       <div className="space-y-6">
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <ShieldCheck size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <ShieldCheck size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Use of Services</h2>
@@ -36,8 +36,8 @@ export default function TermsPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <FileCode size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <FileCode size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Content & Licenses</h2>
@@ -50,8 +50,8 @@ export default function TermsPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <AlertTriangle size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <AlertTriangle size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Warranty & Liability</h2>
@@ -64,8 +64,8 @@ export default function TermsPage() {
 
         <section className="card hover:shadow-lg transition-shadow border-2 border-brand-200 dark:border-brand-900 bg-white dark:bg-neutral-950">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Mail size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Mail size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3 text-neutral-900 dark:text-neutral-100">Contact</h2>
