@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: [
@@ -7,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', ...defaultTheme.fontFamily.sans],
+        serif: ['var(--font-serif)', ...defaultTheme.fontFamily.serif],
+      },
       colors: {
         brand: {
           50: '#f3f7ff', 100: '#e6efff', 200: '#c7dbff', 300: '#9abaff',
@@ -18,4 +23,3 @@ export default {
   },
   plugins: []
 } satisfies Config
-
