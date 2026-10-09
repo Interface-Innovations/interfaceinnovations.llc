@@ -5,8 +5,8 @@ export default function PrivacyPage() {
     <div className="max-w-4xl mx-auto py-12 px-4">
       {/* Header */}
       <div className="mb-12 text-center">
-        <div className="inline-flex items-center justify-center text-brand-600 dark:text-brand-400 mb-6">
-          <Shield size={48} strokeWidth={1.5} />
+        <div className="inline-flex items-center justify-center text-neutral-400 dark:text-neutral-500 mb-6">
+          <Shield size={32} strokeWidth={1.25} aria-hidden="true" />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
         <p className="text-lg text-neutral-600 dark:text-neutral-400">
@@ -25,22 +25,22 @@ export default function PrivacyPage() {
       <div className="space-y-6">
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Database size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Database size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Information We Collect</h2>
               <ul className="space-y-2 text-neutral-700 dark:text-neutral-300">
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span><strong>Account data</strong> (e.g., name, email) if you create an account in an app.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span><strong>Usage data</strong> (diagnostics, device info) to improve stability and performance.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span><strong>Support data</strong> that you send us via email or forms.</span>
                 </li>
               </ul>
@@ -50,22 +50,22 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <FileEdit size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <FileEdit size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">How We Use Information</h2>
               <ul className="space-y-2 text-neutral-700 dark:text-neutral-300">
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span>Provide, maintain, and improve our apps and services.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span>Respond to support requests and communicate important updates.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span>Comply with legal obligations and prevent abuse.</span>
                 </li>
               </ul>
@@ -75,8 +75,8 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Share2 size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Share2 size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Data Sharing</h2>
@@ -89,8 +89,8 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Clock size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Clock size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Retention</h2>
@@ -103,22 +103,22 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Lock size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Lock size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Your Rights</h2>
               <ul className="space-y-2 text-neutral-700 dark:text-neutral-300">
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span>Access, correct, or delete your data.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span>Opt out of non‑essential analytics where applicable.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-brand-600 dark:text-brand-400 mt-1">•</span>
+                  <span className="text-neutral-400 dark:text-neutral-500 mt-1">•</span>
                   <span>Appeal decisions or contact us with questions at <a href="mailto:privacy@interfaceinnovations.llc" className="link">privacy@interfaceinnovations.llc</a>.</span>
                 </li>
               </ul>
@@ -128,8 +128,8 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Baby size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Baby size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Children</h2>
@@ -142,8 +142,8 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Globe size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Globe size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">International Transfers</h2>
@@ -156,8 +156,8 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <FileEdit size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <FileEdit size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">Changes</h2>
@@ -170,8 +170,8 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow border-2 border-brand-200 dark:border-brand-900 bg-white dark:bg-neutral-950">
           <div className="flex items-start gap-4">
-            <div className="text-brand-600 dark:text-brand-400 shrink-0 mt-1">
-              <Mail size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <Mail size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3 text-neutral-900 dark:text-neutral-100">Contact</h2>
@@ -185,8 +185,8 @@ export default function PrivacyPage() {
 
         <section className="card hover:shadow-lg transition-shadow border-dashed">
           <div className="flex items-start gap-4">
-            <div className="text-neutral-600 dark:text-neutral-400 shrink-0 mt-1">
-              <FileText size={28} strokeWidth={1.5} />
+            <div className="text-neutral-400 dark:text-neutral-500 shrink-0 mt-1">
+              <FileText size={22} strokeWidth={1.5} aria-hidden="true" />
             </div>
             <div className="flex-1">
               <h2 className="text-2xl font-semibold mb-3">App‑Specific Policies</h2>
