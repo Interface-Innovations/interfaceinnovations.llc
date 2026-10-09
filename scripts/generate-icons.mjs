@@ -5,28 +5,12 @@
  * This script creates favicon.ico, icon.png, apple-icon.png, and opengraph-image.png
  */
 
-const sharp = require('sharp');
-const fs = require('fs');
-const path = require('path');
+import sharp from 'sharp';
+import fs from 'node:fs';
+import path from 'node:path';
 
-const SOURCE_LOGO = path.join(__dirname, '../public/interface_innovations_logo.png');
-const APP_DIR = path.join(__dirname, '../app');
-
-/**
- * Create a rounded rectangle mask as an SVG
- * @param {number} width - Width of the icon
- * @param {number} height - Height of the icon
- * @param {number} radius - Border radius
- * @returns {Buffer} SVG buffer for the rounded mask
- */
-function createRoundedMask(width, height, radius) {
-  const svg = `
-    <svg width="${width}" height="${height}">
-      <rect x="0" y="0" width="${width}" height="${height}" rx="${radius}" ry="${radius}" fill="white"/>
-    </svg>
-  `;
-  return Buffer.from(svg);
-}
+const SOURCE_LOGO = path.join(import.meta.dirname, '../interface_innovations_logo.png');
+const APP_DIR = path.join(import.meta.dirname, '../app');
 
 async function generateIcons() {
   console.log('🎨 Generating icons for Next.js...\n');

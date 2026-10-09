@@ -1,31 +1,43 @@
 import { Target, Shield, Headphones, Mail, LifeBuoy, ArrowRight } from 'lucide-react';
 
+const values = [
+  {
+    icon: Target,
+    title: "Focused",
+    body: "Small team, big impact. We ship pragmatic solutions fast without compromising on quality.",
+  },
+  {
+    icon: Shield,
+    title: "Secure",
+    body: "Privacy-first design with strong data protection practices. Your data stays yours.",
+  },
+  {
+    icon: Headphones,
+    title: "Supportive",
+    body: "We stand behind our products with straightforward, responsive support.",
+  },
+];
+
 export default function Page() {
   return (
     <>
       {/* Hero Section */}
-      <section id="home" className="min-h-[80vh] flex flex-col justify-center">
-        <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+      <section id="home" className="min-h-[75dvh] flex flex-col justify-center scroll-mt-16">
+        <div className="max-w-3xl">
+          <p className="eyebrow">Mobile &amp; Web Applications</p>
+          <h1 className="mt-6 text-5xl md:text-7xl leading-[1.05]">
             Interface Innovations
           </h1>
-          <p className="mt-6 text-xl md:text-2xl text-neutral-600 dark:text-neutral-300 leading-relaxed">
+          <div className="mt-8 h-px w-16 bg-neutral-300 dark:bg-neutral-700" aria-hidden="true" />
+          <p className="mt-8 text-lg md:text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-2xl">
             We design and ship modern mobile and web applications that solve real problems for real people.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a 
-              href="#contact" 
-              className="btn bg-brand-600 text-white border-brand-600 hover:bg-brand-700 hover:border-brand-700 px-8 py-3 text-lg group"
-            >
-              <Mail size={20} className="mr-2" />
+          <div className="mt-10 flex flex-wrap gap-3">
+            <a href="#contact" className="btn btn-primary group">
               Get in Touch
-              <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none" />
             </a>
-            <a 
-              href="/support" 
-              className="btn px-8 py-3 text-lg hover:border-brand-600 dark:hover:border-brand-400 group"
-            >
-              <LifeBuoy size={20} className="mr-2" />
+            <a href="/support" className="btn">
               Support
             </a>
           </div>
@@ -33,80 +45,58 @@ export default function Page() {
       </section>
 
       {/* Values Section */}
-      <section id="about" className="py-20">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Do</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <div className="card hover:shadow-xl hover:scale-[1.02] transition-all duration-300 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900 hover:border-brand-200 dark:hover:border-brand-900">
-            <div className="mb-4 text-brand-600 dark:text-brand-400">
-              <Target size={48} strokeWidth={1.5} />
+      <section id="about" className="py-20 border-t border-neutral-200 dark:border-neutral-800 scroll-mt-16">
+        <p className="eyebrow">About</p>
+        <h2 className="mt-4 text-4xl md:text-5xl mb-14">What We Do</h2>
+        <div className="grid gap-12 md:grid-cols-3 md:gap-10">
+          {values.map(({ icon: Icon, title, body }) => (
+            <div key={title}>
+              <Icon size={22} strokeWidth={1.5} className="text-neutral-400 dark:text-neutral-500" aria-hidden="true" />
+              <h3 className="mt-5 font-serif text-2xl font-medium">{title}</h3>
+              <p className="mt-3 text-neutral-600 dark:text-neutral-400 leading-relaxed">{body}</p>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Focused</h3>
-            <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              Small team, big impact. We ship pragmatic solutions fast without compromising on quality.
-            </p>
-          </div>
-          <div className="card hover:shadow-xl hover:scale-[1.02] transition-all duration-300 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900 hover:border-brand-200 dark:hover:border-brand-900">
-            <div className="mb-4 text-brand-600 dark:text-brand-400">
-              <Shield size={48} strokeWidth={1.5} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Secure</h3>
-            <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              Privacy-first design with strong data protection practices. Your data stays yours.
-            </p>
-          </div>
-          <div className="card hover:shadow-xl hover:scale-[1.02] transition-all duration-300 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900 hover:border-brand-200 dark:hover:border-brand-900">
-            <div className="mb-4 text-brand-600 dark:text-brand-400">
-              <Headphones size={48} strokeWidth={1.5} />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Supportive</h3>
-            <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              We stand behind our products with straightforward, responsive support.
-            </p>
-          </div>
+          ))}
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">Get in Touch</h2>
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="card hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900">
+      <section id="contact" className="py-20 border-t border-neutral-200 dark:border-neutral-800 scroll-mt-16">
+        <p className="eyebrow">Contact</p>
+        <h2 className="mt-4 text-4xl md:text-5xl mb-12">Get in Touch</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="card flex flex-col">
             <div className="flex items-center gap-3 mb-4">
-              <div className="text-brand-600 dark:text-brand-400">
-                <LifeBuoy size={24} strokeWidth={1.5} />
-              </div>
-              <h3 className="text-xl font-semibold">Support</h3>
+              <LifeBuoy size={20} strokeWidth={1.5} className="text-neutral-400 dark:text-neutral-500" aria-hidden="true" />
+              <h3 className="font-serif text-2xl font-medium">Support</h3>
             </div>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
               Need help with one of our apps? We&apos;re here to help.
             </p>
-            <div className="space-y-3 text-sm mb-6">
-              <p><strong className="text-neutral-900 dark:text-neutral-100">Email:</strong> <a className="link" href="mailto:support@interfaceinnovations.llc">support@interfaceinnovations.llc</a></p>
-              <p><strong className="text-neutral-900 dark:text-neutral-100">Hours:</strong> Mon–Fri, 9am–5pm CT</p>
-              <p><strong className="text-neutral-900 dark:text-neutral-100">Response Time:</strong> Within 1 business day</p>
-            </div>
-            <a href="/support" className="btn inline-flex group hover:bg-neutral-50 dark:hover:bg-neutral-900">
+            <dl className="space-y-3 text-sm mb-8">
+              <div><dt className="inline font-medium text-neutral-900 dark:text-neutral-100">Email: </dt><dd className="inline"><a className="link" href="mailto:support@interfaceinnovations.llc">support@interfaceinnovations.llc</a></dd></div>
+              <div><dt className="inline font-medium text-neutral-900 dark:text-neutral-100">Hours: </dt><dd className="inline">Mon–Fri, 9am–5pm CT</dd></div>
+              <div><dt className="inline font-medium text-neutral-900 dark:text-neutral-100">Response Time: </dt><dd className="inline">Within 1 business day</dd></div>
+            </dl>
+            <a href="/support" className="btn group mt-auto self-start">
               Full Support Page
-              <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none" />
             </a>
           </div>
-          
-          <div className="card hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-950 dark:to-neutral-900">
+
+          <div className="card flex flex-col">
             <div className="flex items-center gap-3 mb-4">
-              <div className="text-brand-600 dark:text-brand-400">
-                <Mail size={24} strokeWidth={1.5} />
-              </div>
-              <h3 className="text-xl font-semibold">Business Inquiries</h3>
+              <Mail size={20} strokeWidth={1.5} className="text-neutral-400 dark:text-neutral-500" aria-hidden="true" />
+              <h3 className="font-serif text-2xl font-medium">Business Inquiries</h3>
             </div>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
               Interested in working with us? Let&apos;s talk.
             </p>
-            <div className="space-y-3 text-sm mb-6">
-              <p><strong className="text-neutral-900 dark:text-neutral-100">Email:</strong> <a className="link" href="mailto:hello@interfaceinnovations.llc">hello@interfaceinnovations.llc</a></p>
-            </div>
-            <div className="pt-6 border-t border-neutral-200 dark:border-neutral-800">
+            <dl className="space-y-3 text-sm mb-8">
+              <div><dt className="inline font-medium text-neutral-900 dark:text-neutral-100">Email: </dt><dd className="inline"><a className="link" href="mailto:hello@interfaceinnovations.llc">hello@interfaceinnovations.llc</a></dd></div>
+            </dl>
+            <div className="mt-auto pt-6 border-t border-neutral-200 dark:border-neutral-800">
               <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                <a href="/privacy" className="link">Privacy Policy</a> • <a href="/terms" className="link">Terms</a> • <a href="/delete-account" className="link">Delete Account</a>
+                <a href="/privacy" className="link">Privacy Policy</a> · <a href="/terms" className="link">Terms</a> · <a href="/delete-account" className="link">Delete Account</a>
               </p>
             </div>
           </div>
@@ -115,4 +105,3 @@ export default function Page() {
     </>
   );
 }
-
